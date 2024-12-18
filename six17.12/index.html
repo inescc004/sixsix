@@ -1,0 +1,234 @@
+<!-- Este é um comentário -->
+<!-- (c) Carolina Santos, Inês Cruz, Iria Paulina, Miriam Jamal, 2024-11-15, LDC, FBAUP -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="background.css" />
+    <!--<link rel="stylesheet" href="lines.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>SiX - Digital Drawing for Locked-In Syndrome Patients</title>
+  </head>
+  <body>
+    <!-- ... BEGINNING OF HEADER SECTION ... -->
+    <header>
+      <div class="header-title"><a href="index.html">SiX</a></div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <nav class="nav-menu">
+        <div class="nav-item"><a href="index.html">Home</a></div>
+        <div class="nav-item"><a href="about.html">About</a></div>
+        <div class="nav-item"><a href="members.html">Members</a></div>
+        <div class="nav-item"><a href="research-detail.html">Research</a></div>
+        <div class="nav-item">
+          <a href="activities.html" class="has-submenu">Activities</a>
+          <div class="submenu">
+            <div class="submenu-item">
+              <a href="workshops.html">Workshops</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="research-publications.html" class="has-submenu"
+            >Publications</a
+          >
+          <div class="submenu">
+            <div class="submenu-item"><a href="output.html">Output</a></div>
+          </div>
+        </div>
+        <div class="nav-item"><a href="credits.html">Credits</a></div>
+      </nav>
+      <label class="hamburger-menu" for="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+    </header>
+
+    <main>
+      <div class="background-section">
+        <div class="bubble bubble1"></div>
+        <div class="bubble bubble2"></div>
+        <div class="bubble bubble3"></div>
+        <div class="bubble bubble4"></div>
+        <div class="bubble bubble5"></div>
+        <div class="bubble bubble6"></div>
+        <div class="bubble bubble7"></div>
+        <div class="bubble bubble8"></div>
+      </div>
+
+      <section class="hero" style="position: relative">
+        <div class="text-block top-left">
+          <p class="body-font">
+            A research project exploring digital drawing as a means of
+            expression for patients with locked-in syndrome.
+          </p>
+        </div>
+
+        <!-- SVG Line 1 
+        <svg width="200" height="400" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 50px; left: 100px; z-index: -1;">
+          <rect width="100%" height="100%" fill="url(#gradient)" />
+          <path d="M 50 70 C 70 90, 30 110, 50 130 C 40 150, 60 170, 50 190 C 70 210, 40 230, 50 250 C 60 270, 50 290, 50 310 C 40 330, 60 350, 100 370" 
+                fill="none" stroke="red" stroke-width="2" />
+        </svg> -->
+
+        <!--<img
+        src="imagens/vector2.svg"
+        alt="Vector 2"
+        style="
+          position: absolute;
+          top: 15%;
+          left: 50%;
+          width: 400px;
+          height: 50px;
+          z-index: 10;
+          max-width: none;
+          height: auto;
+          transform: translateX(-50%);
+        "
+      /> -->
+
+        <div class="hero-title">
+          <h1>
+            <span class="Swiss721 Light">Drawing for social</span> <br />
+            <span class="Swiss721 Light"
+              >RE - <span class="highlight">Connectivity</span></span
+            >
+          </h1>
+        </div>
+
+        <div class="text-block bottom-left">
+          <p class="body-font">
+            The project uses the human body as an interface, converting minimal
+            physical movements into drawing commands.
+          </p>
+        </div>
+
+        <div class="text-block bottom-right">
+          <p class="body-font">
+            This approach recognizes that creative expression is a fundamental
+            human need, particularly important for those with severe motor
+            impairments.
+          </p>
+        </div>
+
+        <a href="about.html">
+          <button class="about-btn">About</button>
+        </a>
+      </section>
+
+      <section class="outputs-section">
+        <div class="outputs-card">
+          <div class="outputs-content">
+            <h2 class="outputs-title">Events</h2>
+            <p class="outputs-description">
+              SiX will host workshops and presentations for students,
+              researchers, and healthcare professionals. These events will focus
+              on:
+            </p>
+            <h3 class="outputs-subtitle">Understanding LIS and its impact</h3>
+            <p class="outputs-text">
+              Raising awareness of LIS and the challenges faced by patients and
+              their families.
+            </p>
+            <button class="outputs-button">Read more</button>
+          </div>
+          <div class="outputs-image">
+            <img src="imagens/events.jpeg" alt="Events Image" />
+          </div>
+        </div>
+
+        <div class="outputs-card">
+          <div class="outputs-content">
+            <h2 class="outputs-title">Research</h2>
+            <p class="outputs-description">
+              The SiX project will produce a variety of publications, including:
+            </p>
+            <h3 class="outputs-subtitle">Scientific papers</h3>
+            <p class="outputs-text">
+              Published in peer-reviewed journals, disseminating the project’s
+              findings and contributing to the scientific understanding of LIS
+              and assistive technologies.
+            </p>
+            <button class="outputs-button">Read more</button>
+          </div>
+          <div class="outputs-image">
+            <img src="imagens/research.jpeg" alt="Research Image" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="https://www.up.pt/fbaup/pt/" target="_blank"
+            ><img src="logos/logotypesArtboard-1.png" alt="FBAUP"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://www.fct.pt" target="_blank"
+            ><img src="logos/logotypesArtboard-2.png" alt="FCT"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://i2ads.up.pt/" target="_blank"
+            ><img src="logos/logotypesArtboard-3.png" alt="i2ads"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://apela.pt/" target="_blank"
+            ><img src="logos/logotypesArtboard-4.png" alt="APELA"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://aditgames.pt/" target="_blank"
+            ><img src="logos/logotypesArtboard-5.png" alt="ADITGameS"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://www.ulusofona.pt/" target="_blank"
+            ><img
+              src="logos/logotypesArtboard-6.png"
+              alt="Universidade Lusófona"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://idmais.org/" target="_blank"
+            ><img src="logos/logotypesArtboard-7.png" alt="ID+"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://www.i3s.up.pt/" target="_blank"
+            ><img src="logos/logotypesArtboard-8.png" alt="i3S"
+          /></a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://www.fraunhofer.pt/" target="_blank"
+            ><img src="logos/logotypesArtboard-9.png" alt="Fraunhofer"
+          /></a>
+        </div>
+      </div>
+      <p class="footer-text">
+        Project 2022.08322.PTDC funded by national funds through the FCT –
+        Fundação para a Ciência e a Tecnologia, I.P. DOI
+        10.54499/2022.08322.PTDC.
+      </p>
+    </footer>
+    <div class="scroll-arrows">
+      <div class="scroll-arrow scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+      <div class="scroll-arrow scroll-down" onclick="scrollToBottom()">
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </div>
+  </body>
+</html>
