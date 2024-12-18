@@ -1,0 +1,197 @@
+/* ... BEGINNING OF BACKGROUND SECTION ... */
+/* ... BEGINNING OF BACKGROUND SECTION ... */
+.background-section {
+  position: absolute; /* Position relative for absolute positioning of bubbles */
+  overflow: hidden; /* Prevent overflow */
+  height: 100%; /* Set height to full viewport height */
+  width: 100%; /* Set width to full viewport width */
+}
+
+/* Bubbles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1; /* Vary opacity */
+  filter: blur(30px); /* Blurry effect */
+  animation: move 10s infinite alternate; /* Animation for movement */
+  mix-blend-mode: hard-light; /* Hard light effect */
+  z-index: 1; /* Set a lower z-index for bubbles */
+  max-width: 80vw; /* Restrict width to 20% of viewport width */
+  max-height: 80vh; /* Restrict height to 20% of viewport height */
+}
+
+/* Keyframes for bubble movement */
+@keyframes move {
+  0% {
+    transform: translate(0, 0); /* Original position */
+  }
+  100% {
+    transform: translate(
+      calc(10px * (random() - 0.5)),
+      calc(10px * (random() - 0.5))
+    ); /* Slight movement */
+  }
+}
+
+/* Fixed position and size bubbles */
+.bubble.bubble1 {
+  /*1ST RED BUBBLE ON 1ST EXPLANATION*/
+  background: linear-gradient(
+    135deg,
+    rgba(128, 74, 237, 0.9),
+    rgb(102, 48, 138)
+  ); /* Diagonal gradient */
+  width: 150px; /* Fixed size */
+  height: 150px; /* Fixed size */
+  opacity: 0.4;
+  top: 30px; /* Updated Y position */
+  left: 160 px; /* Updated X position */
+  animation: float 20s infinite alternate; /* Animation for gentle movement */
+}
+
+/* Keyframes for bubble movement */
+@keyframes float {
+  0% {
+    transform: translate(0, 0); /* Original position */
+  }
+  100% {
+    transform: translate(200px, 100px); /* Slight movement */
+  }
+}
+
+.bubble.bubble2 {
+  background: radial-gradient(circle, #F05454 10%, #DFC492 100%); /* Added a new color between yellow and coral red */
+  width: 300px; /* Kept size for better visibility */
+  height: 300px; /* Kept size for better visibility */
+  mix-blend-mode: hard-light; /* Hard light effect */
+  top: 40%;
+  left: 25%;
+  opacity: 0.7; /* Set opacity to 100% */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.bubble.bubble3 {
+  background: conic-gradient(
+    rgba(0, 162, 232, 1) 0%,
+    rgba(99, 44, 253, 1) 36%,
+    rgba(59, 97, 212, 1) 52%,
+    rgba(134, 174, 226, 1) 100%
+  ); /* Angular gradient */
+  width: 250px; /* Fixed size */
+  height: 250px; /* Fixed size */
+  opacity: 0.5; /* Set opacity */
+  top: 20%; /* Positioning */
+  left: 62%; /* Positioning */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.bubble.bubble4 {
+  background: conic-gradient(
+    rgb(62, 205, 253) 10%,
+    rgb(125, 199, 23) 30%,
+    rgb(238, 66, 209) 90%
+  ); /* Purplish-pinkish angular gradient */
+  width: 200px; /* Fixed size */
+  height: 200px; /* Fixed size */
+  opacity: 0.6; /* Set opacity */
+  top: 60%; /* Positioning */
+  left: 60%; /* Positioning */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.bubble.bubble5 {
+  background: conic-gradient(
+    rgba(255, 105, 180, 1) 0%,
+    rgb(20, 251, 255) 50%,
+    rgb(0, 100, 128) 100%
+  ); /* Purplish-pinkish angular gradient */
+  width: 15px; /* Fixed size */
+  height: 15px; /* Fixed size */
+  opacity: 0.6; /* Set opacity */
+  top: 5%; /* Positioning */
+  left: 5%; /* Positioning */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.bubble.bubble6 {
+  background: conic-gradient(
+    #F7B50F 100%,
+    #F7B50F 100%,
+    #86AEE2 100%
+  ); /* Corrected background color */
+  width: 350px; /* Fixed size */
+  height: 350px; /* Fixed size */
+  opacity: 0.3; /* Set opacity */
+  mix-blend-mode: hard-light; /* Hard light effect */
+  top: 1%; /* Adjusted to move the bubble even higher */
+  left: 90%; /* Positioning */
+  z-index: 10; /* Increased z-index to ensure it appears above the header */
+}
+
+.bubble.bubble7 {
+  background: conic-gradient(
+    rgba(0, 162, 232, 1) 0%,
+    rgba(99, 44, 253, 1) 36%,
+    rgba(59, 97, 212, 1) 52%,
+    rgba(134, 174, 226, 1) 100%
+  ); /* Angular gradient */
+  width: 800px; /* Fixed size */
+  height: 800px; /* Fixed size */
+  opacity: 0.5; /* Set opacity */
+  top: 5%; /* Positioning */
+  left: 90%; /* Positioning */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.bubble.bubble8 {
+  background: conic-gradient(
+    rgba(0, 162, 232, 1) 0%,
+    rgba(0, 255, 127, 1) 50%,
+    rgba(0, 100, 255, 1) 100%
+  );
+  width: 200px;
+  height: 200px;
+  opacity: 0.15;
+  top: 1%;
+  left: 1%;
+  z-index: 1;
+}
+
+.bubble.bubble9 {
+  background: conic-gradient(
+    rgba(255, 105, 180, 1) 0%,
+    rgb(20, 173, 255) 50%,
+    rgb(0, 100, 128) 100%
+  );
+  width: 200px;
+  height: 200px;
+  opacity: 0.6;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
+}
+
+.bubble.bubble10 {
+  background: linear-gradient(
+    #ff5733 0%,
+    #09adff 50%,
+    #bf72f6 100%
+  );
+  width: 250px;
+  height: 250px;
+  opacity: 0.3;
+  top: 60%;
+  left: 15%;
+  z-index: 1;
+}
+
+.bubble.bubble11 {
+  background: radial-gradient(circle, #F05454 10%, #DFC492 100%); /* Added a new color between yellow and coral red */
+  width: 300px; /* Kept size for better visibility */
+  height: 300px; /* Kept size for better visibility */
+  mix-blend-mode: hard-light; /* Hard light effect */
+  top: 50%;
+  left: 10%;
+  opacity: 0.6; /* Set opacity to 100% */
+  z-index: 1; /* Ensure it appears above other elements */
+}
